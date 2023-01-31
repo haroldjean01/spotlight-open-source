@@ -30,7 +30,7 @@ export default function TableComponent() {
 
       <Column width={100} sortable resizable>
         <HeaderCell>Email</HeaderCell>
-        <Cell dataKey="avatar" />
+        <Cell dataKey="email" />
       </Column>
 
       <Column width={100} resizable>
