@@ -1,7 +1,7 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
 // import * as V from 'victory';
-import { VictoryBar, VictoryChart } from 'victory';
+import { VictoryBar, VictoryChart, VictoryTheme } from 'victory';
 import './Chart.css';
 
 export default function Chart() {
@@ -12,7 +12,7 @@ export default function Chart() {
     { quarter: 4, earnings: 19000 },
   ];
   return (
-    <VictoryChart>
+    <VictoryChart theme={VictoryTheme.material}>
       <VictoryBar
         data={data}
         // data accessor for x values
