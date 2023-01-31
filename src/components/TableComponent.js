@@ -6,9 +6,15 @@ import React from 'react';
 
 export default function TableComponent() {
   const dataList = [
-    { id: 1, name: 'a', email: 'a@email.com', avatar: 'foo', occupation: 'doctor' },
-    { id: 2, name: 'b', email: 'b@email.com', avatar: 'bar', occupation: 'full stack developer' },
-    { id: 3, name: 'c', email: 'c@email.com', avatar: 'bill', occupation: 'ice skater' },
+    { id: 1, name: 'Jess', email: 'a@email.com', avatar: 'foo', occupation: 'doctor' },
+    {
+      id: 2,
+      name: 'Mark',
+      email: 'b@email.com',
+      avatar: 'bar',
+      occupation: 'full stack developer',
+    },
+    { id: 3, name: 'Mary', email: 'c@email.com', avatar: 'bill', occupation: 'ice skater' },
   ];
   return (
     <Table data={dataList}>
