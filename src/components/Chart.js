@@ -2,6 +2,7 @@ import React from 'react';
 // import ReactDOM from 'react-dom';
 // import * as V from 'victory';
 import { VictoryBar, VictoryChart } from 'victory';
+import './Chart.css';
 
 export default function Chart() {
   const data = [
