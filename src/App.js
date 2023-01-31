@@ -17,7 +17,7 @@ function App() {
       </nav>
       <Switch>
         <Route path="/table">
-          <h1>Table Libary</h1>
+          <h1>Table Library</h1>
           <TableComponent />
         </Route>
         <Route path="/charts">
