@@ -6,9 +6,9 @@ import React from 'react';
 
 export default function TableComponent() {
   const dataList = [
-    { id: 1, name: 'a', email: 'a@email.com', avartar: '...' },
-    { id: 2, name: 'b', email: 'b@email.com', avartar: '...' },
-    { id: 3, name: 'c', email: 'c@email.com', avartar: '...' },
+    { id: 1, name: 'a', email: 'a@email.com', avatar: 'foo', occupation: 'doctor' },
+    { id: 2, name: 'b', email: 'b@email.com', avatar: 'bar', occupation: 'full stack developer' },
+    { id: 3, name: 'c', email: 'c@email.com', avatar: 'bill', occupation: 'ice skater' },
   ];
   return (
     <Table data={dataList}>
@@ -24,11 +24,12 @@ export default function TableComponent() {
 
       <Column width={100} sortable resizable>
         <HeaderCell>Email</HeaderCell>
-        <Cell></Cell>
+        <Cell dataKey="avatar" />
       </Column>
 
       <Column width={100} resizable>
-        <HeaderCell>Avatar</HeaderCell>
+        <HeaderCell>Occupation</HeaderCell>
+        <Cell dataKey="occupation" />
       </Column>
     </Table>
   );
